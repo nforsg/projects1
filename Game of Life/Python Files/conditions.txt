@@ -1,0 +1,22 @@
+    RULES:
+    LIVE CELL: 
+    If the live cell is a predator:
+
+    - If the surrounding cells sum up to at least 3 omnivores, the predator dies. 
+    CORRECTION: Okay, no, we don't want this. In irrelevant for predators to kill each other and reproduct at the same time.
+    - If the surrounding cells sum up to at least 4 herbavores, the predator dies.
+    CORRECTION: Instead, we can formulate the following:
+    - Predators get -1 in nergy for each time it doesn't kill/eat. If energy = 0, it dies.
+    
+    If the live cell is an omnivore:
+    - If the surrounding cells sum up to 3 herbavores or more, the omnivore dies.
+    - If the surrounding cells sum up to at least 1 predator, the omnivore dies.
+    
+    If the live cell is a herbavore:
+    - If the surrounding cells sum up to to at least 1 predator, the herbavore dies.
+    - If the surrounding cells sum up to at least 2 omnivores, the herbavore dies.
+
+
+    DEAD CELL:
+    1) If the middle cell is dead and its neighbour cell is excactly 
+    three live cells of its own species, it becomes a live cell.

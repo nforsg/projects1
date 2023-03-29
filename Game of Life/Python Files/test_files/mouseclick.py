@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+import pygame
+
+LEFT = 1
+MID = 2
+RIGHT = 3
+
+running = 1
+screen = pygame.display.set_mode((320, 200))
+
+while running:
+    event = pygame.event.poll()
+    if event.type == pygame.QUIT:
+        running = 0
+    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == LEFT:
+        print("You pressed the left mouse button")# (%d, %d)",  % event.pos)
+    elif event.type == pygame.MOUSEBUTTONUP and event.button == LEFT:
+        print("You released the left mouse button")# at (%d, %d)" % event.pos
+    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == MID:
+        print("You pressed the middle mouse button")# (%d, %d)",  % event.pos)
+    elif event.type == pygame.MOUSEBUTTONUP and event.button == MID:
+        print("You released the middle mouse button")# at (%d, %d)" % event.pos
+    elif event.type == pygame.MOUSEBUTTONDOWN and event.button == RIGHT:
+        print("You pressed the right mouse button at")# (%d, %d)" % event.pos
+    elif event.type == pygame.MOUSEBUTTONUP and event.button == RIGHT:
+        print("You released the right mouse button")# at (%d, %d)" % event.pos
+
+    screen.fill((0, 0, 0))
+    pygame.display.flip()
