@@ -45,12 +45,15 @@ class Functions():
                 merge_idx += 1 
         return array
         
-def main(): 
+def main():
+    '''Checking with a main function'''
     arr1 = [8,7,6,5,4,3,2,1]
+    arr2 = [10,9,8,7,6,5,4,3,2,1]
     func = Functions()
-    assert func.counter(arr1) == 8 
+    assert func.counter(arr1) == 8
+    assert func.counter(arr2) == 10 
     print(func.mergesort(arr1))
-    
+    print(func.mergesort(arr2))
 
 if __name__== '__main__':
     main()
