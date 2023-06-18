@@ -1,9 +1,10 @@
-from func_mania import Functions
+from func_mania import Pasture
+
 
 
 arr1 = [1,2,3,4,5,6,7,8]
 arr2 = [10,9,8,7,6,5,4,3,2,1]
-func = Functions()
+func = Pasture()
 
 def test_size():
     '''Testig the array-size function called counter'''
