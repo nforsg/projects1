@@ -1,6 +1,10 @@
 import  numpy as np
 import random as rn
 
+'''A very simple script for learning the pytest module and its functionality. The logics of the classes are very counded and could be further developed. They almost work as 
+"dummies" that are logical enough to satisfy the purpose of the pytest module in test_funcs.py'''
+
+
 class _Animal():
     def __init__(self, species, mood, hunger):#, health, diet):
         self.species = species
